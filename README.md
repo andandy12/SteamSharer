@@ -17,6 +17,7 @@ node .\SteamSharer.js
 When prompted you must enter your username and password. Which will save the account details to a local file `.\account.json`. This is saved so that on the following runs you will not have to enter a username or password. Alternatively you can pass the username and password as arguments when running the command `node .\SteamSharer.js <username> <password>`.
 
 Next the program will ask you to enter the SteamID64 of the account you wish to authorize, you can get this either through a profile perma link or through a website like [steamrep](https://steamrep.com/). 
+
 `SteamID for an account to auth: 76561198119580255`
 
 To halt the program you must hit `Ctrl+C`, it may take two attempts.
