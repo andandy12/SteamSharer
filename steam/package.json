@@ -1,0 +1,15 @@
+{
+  "name": "steam-family-sharing",
+  "version": "1.0.0",
+  "description": "Automatically enable family sharing on steam accounts.",
+  "main": "SteamSharer.js",
+  "scripts": {
+    "main": "node .\\SteamSharer.js"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "dependencies": {
+    "int64-buffer": "^1.0.1",
+    "steam-user": "^4.19.8"
+  }
+}
