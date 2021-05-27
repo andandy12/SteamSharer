@@ -3,7 +3,6 @@
 var args = process.argv.slice(2);
 var hasLoggedIn = false;
 
-
 //used in askQuestion
 const readline = require('readline'); 
 //used when logon event happens
@@ -37,7 +36,6 @@ function sleep(ms) {
 	  setTimeout(resolve, ms);
 	});
 } 
-
 
 client.on('steamGuard', async function(domain, callback) {
 	console.log("Steam Guard code needed from email ending in " + domain);
@@ -79,11 +77,6 @@ client.on('loggedOn', async function(details, parental) {
 		else
 			return false;
 	}
-
-	
-	
-
-	
 	// Attempt to authorize device for sharing -- we currently dont get local device token as these functions are broken
 	
 	//client.authorizeRemoteSharingDevice(computername, devTokenitem);
@@ -123,9 +116,7 @@ client.on('loggedOn', async function(details, parental) {
 		await client.activateSharingAuthorization(LocSteam64, devTokenitem);
 		console.log(await client.getAuthorizedSharingDevices()); // debug
 		*/
-
 		await askQuestion("Press enter to remove authorization");
-		
 		//console.log("Removing device auth from: ", devTokenitem); // I believe device auth is pointless to remove... the client will then not have to reattempt to authorize.
 		//await client.deauthorizeSharingDevice(devTokenitem);
 		console.log("Removing borrower auth from: ", borrowersSteamID);
@@ -134,7 +125,6 @@ client.on('loggedOn', async function(details, parental) {
 			console.log('\x1b[31m%s\x1b[0m',"Account was not removed as an borrower");
 		else
 			console.log('\x1b[32m%s\x1b[0m',"Account was successfully removed as an borrower");
-		
 		console.log();
 	}
 });
@@ -142,7 +132,6 @@ client.on('loggedOn', async function(details, parental) {
 client.on('debug', async function(string) {
 	//console.log(string);
 });
-
 
 /* // used to authorize local device currently not working at all times... so removed until library supports authorizing remote devices
 var deviceToken = []; 
