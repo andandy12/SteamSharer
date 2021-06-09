@@ -4,7 +4,7 @@ Steam Sharer is a node.js script based off the [node-steam-user](https://github.
 ## Installation
 You must have [node.js](https://nodejs.org/en/) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed to install and run the script. 
 To check if these programs are installed you can run `node-v` and `npm -v`, if either of these commands cause a error or print a non-valid version number you must install them.
-After npm is working properly in order to install all dependencies, run `npm i` in the same directory as `package.json`.
+After npm is working properly in order to install all dependencies, run `npm i` in the same directory as `package.json`. Alternatively you could just run `install.bat` to install all required dependencies.
 #### Prebuilt release
 The relase on the right side of the page was ran on `win10 x64 20H2` so results may vary on running the script. This prebuilt release was built using [pkg](https://www.npmjs.com/package/pkg), it does not require node.js or npm installed to run.
 ## Usage
