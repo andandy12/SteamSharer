@@ -7,9 +7,7 @@ const fs = require('fs');
 //const computername = require('os').hostname();
 //var Uint64LE = require("int64-buffer").Uint64LE;
 
-
 const client = new SteamUser();
-
 
 const addField = (fieldsToAdd, field, fieldValue) => {
 	if (fieldValue !== undefined && fieldValue !== null)
